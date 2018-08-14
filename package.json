@@ -1,0 +1,28 @@
+{
+  "name": "address_book",
+  "version": "1.0.0",
+  "description": "Node.js, Typescript and ElasticSearch RESTful API",
+  "main": "index.js",
+  "dependencies": {
+    "elasticsearch": "^15.1.1",
+    "express": "^4.16.3",
+    "http": "0.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.7.0",
+    "typescript": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RubinThomas75/Address_Book.git"
+  },
+  "author": "Rubin Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RubinThomas75/Address_Book/issues"
+  },
+  "homepage": "https://github.com/RubinThomas75/Address_Book#readme"
+}
