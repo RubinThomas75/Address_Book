@@ -6,6 +6,7 @@
   "dependencies": {
     "elasticsearch": "^15.1.1",
     "express": "^4.16.3",
+    "get-json": "^1.0.0",
     "http": "0.0.0"
   },
   "devDependencies": {
@@ -13,7 +14,8 @@
     "typescript": "^3.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,6 @@
   "bugs": {
     "url": "https://github.com/RubinThomas75/Address_Book/issues"
   },
-  "homepage": "https://github.com/RubinThomas75/Address_Book#readme"
+  "homepage": "https://github.com/RubinThomas75/Address_Book#readme",
+  "keywords": []
 }

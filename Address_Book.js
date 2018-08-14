@@ -3,9 +3,7 @@
 //Training Day 2
 var express = require('express');
 var requestHandle = express();
-requestHandle.use(function (req, res, next) {
-    res.status(200).json({
-        message: 'working'
-    });
-});
+//will route to contacts in this addressbook
+var contactRoutes = require('./api/routes/contact');
+requestHandle.use('/contact', contactRoutes);
 module.exports = requestHandle;

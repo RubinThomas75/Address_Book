@@ -6,10 +6,10 @@ const express = require('express');
 
 const requestHandle = express();
 
-requestHandle.use((req, res, next) => {
-    res.status(200).json({
-        message: 'working'
-    });
-});
+//will route to contacts in this addressbook
+const contactRoutes = require('./api/routes/contact');
+
+requestHandle.use('/contact' , contactRoutes);
+
 
 module.exports = requestHandle;
