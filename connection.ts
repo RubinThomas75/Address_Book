@@ -5,13 +5,10 @@
 //  log: 'info'
 // });
 
-var elasticsearch = require('elasticsearch');
+import * as elasticsearch from 'elasticsearch';
 
-var elasticClient = new elasticsearch.Client({
+export const client = new elasticsearch.Client({
     host: 'localhost:9200',
-    log: 'info'
+    log: 'trace'
 });
 
-module.exports = elasticClient;
-
-var indexName = "randomindex";

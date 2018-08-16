@@ -1,7 +1,8 @@
 
 
-const express = require('express');
-const router = express.Router();
+import * as express from 'express';
+
+export const router = express.Router();
 
 router.get('/:name', (req, res, next) => {
     res.status(200).json({
@@ -17,7 +18,7 @@ router.put('/', (req, res, next) => {
 
 router.delete('/', (req, res, next) => {
     res.status(200).json({
-        message: 'post requests of contact'
+        message: 'delete requests of contact'
     });
 });
 
@@ -27,7 +28,3 @@ router.post('/', (req, res, next) => {
         message: 'post requests of contact'
     });
 });
-
-
-
-module.exports = router;

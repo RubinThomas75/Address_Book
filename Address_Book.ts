@@ -2,14 +2,11 @@
 //Typescript Address Book
 //Training Day 2
 
-const express = require('express');
-
-const requestHandle = express();
-
+import * as express from 'express';
 //will route to contacts in this addressbook
-const contactRoutes = require('./api/routes/contact');
+import { router } from './api/routes/contact';
 
-requestHandle.use('/contact' , contactRoutes);
+export const requestHandle = (express as any)();
 
 
-module.exports = requestHandle;
+requestHandle.use('/contact', router);
